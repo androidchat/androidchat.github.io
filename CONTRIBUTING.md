@@ -40,14 +40,14 @@ Everyone active in the Slack channel can submit a blog post. You don't need to a
 	$ git clone git@github.com:your_name_here/androidchat.github.io.git
 	```
 
-3. Create a new `.md` file in _posts in the format `YYYY-MM-DD-Title-of-the-post`. [Grammar](#Grammar) applies for the title in the file name too.
+3. Create a new `.md` file in _posts in the format `YYYY-MM-DD-Title-of-the-post`. [Grammar](#grammar) applies for the title in the file name too.
 4. The front matter in your Markdown file needs to follow the following guidelines:
 	* Layout always needs to be post.
 		```yaml
 		layout: post
 		```
 
-	* Titles need to follow the [English grammar](#Grammar), short and not be clickbait.
+	* Titles need to follow the [English grammar](#grammar), short and not be clickbait.
 
 		**Bad:**
 		```yaml
@@ -103,6 +103,42 @@ Everyone active in the Slack channel can submit a blog post. You don't need to a
 	```
 
 6. Push the changes to the fork and make a pull request.
+
+## Coding style guidelines
+
+Please use 2 space indentation for YAML files and 4 tab indentation for other files. When in doubt, look at the existing code. [Create an issue](#reporting-issues) if you have any questions.
+
+## Commits
+
+Commits are required to be atomic. Please test your code using a local Jekyll installation for Github Pages. A [how to](https://help.github.com/articles/using-jekyll-with-pages/) is provided by Github. Please also squash commits before merging and making a pull request.
+
+### Messages
+
+> As a general rule, your messages should start with a single line that’s no more than about 50 characters and that describes the changeset concisely, followed by a blank line, followed by a more detailed explanation. The Git project requires that the more detailed explanation include your motivation for the change and contrast its implementation with previous behavior – this is a good guideline to follow. It’s also a good idea to use the imperative present tense in these messages. In other words, use commands. Instead of “I added tests for” or “Adding tests for,” use “Add tests for.” Here is a template originally written by Tim Pope:
+>
+> ```
+> Short (50 chars or less) summary of changes
+>
+> More detailed explanatory text, if necessary.  Wrap it to
+> about 72 characters or so.  In some contexts, the first
+> line is treated as the subject of an email and the rest of
+> the text as the body.  The blank line separating the
+> summary from the body is critical (unless you omit the body
+> entirely); tools like rebase can get confused if you run
+> the two together.
+>
+> Further paragraphs come after blank lines.
+>
+>   - Bullet points are okay, too
+>
+>   - Typically a hyphen or asterisk is used for the bullet,
+>     preceded by a single space, with blank lines in
+>     between, but conventions vary here
+> ```
+
+[Git commit guidelines](https://git-scm.com/book/ch5-2.html)
+
+Also see [Grammar](#grammar).
 
 ## Grammar
 
