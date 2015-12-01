@@ -25,6 +25,8 @@ social_networks:
   github: https://github.com/
   googleplus: https://plus.google.com/+
 
+google_analytics:
+  key: UA-33051301-11
 # Build settings
 headers: /img/headers/compressed/
 markdown: redcarpet
