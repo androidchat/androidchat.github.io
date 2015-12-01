@@ -1,0 +1,36 @@
+# Site settings
+name: AndroidChat
+title: AndroidChat
+short_description: >
+  AndroidChat is a community with a Slack team open to everyone. A place where every developer, idealist, entrepreneur or geek is welcome to share their ideas, questions and successes.
+description: >
+  AndroidChat is an open community with a [Slack](https://slack.com) team open to everyone. A place where every developer, idealist, entrepreneur or geek is welcome to share their ideas, questions and successes. Everyone can submit a blog post to the website via [Github](https://github.com/androidchat/androidchat.github.io) because we know everyone sometimes has an idea for a blogpost, but can't keep the content flowing. We aim with the AndroidChat blog to enable these people to share their knowledge with the community.
+baseurl: ''
+url: http://androidchat.co
+copyright: Attribution-NonCommercial-ShareAlike 4.0 International
+repository: androidchat.github.io
+copyright_icons:
+  cc: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  by: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  nc: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  sa: https://creativecommons.org/licenses/by-nc-sa/4.0/
+social:
+  twitter: AndroidChatCo
+  github: AndroidChat
+  rss: /feed.atom
+  slack: https://androidchat.slack.com
+
+social_networks:
+  twitter: https://twitter.com/
+  github: https://github.com/
+  googleplus: https://plus.google.com/+
+
+# Build settings
+headers: /img/headers/compressed/
+markdown: redcarpet
+sass:
+  style: compressed
+highlighter: pygments
+gems:
+  - jekyll-sitemap
+permalink: pretty

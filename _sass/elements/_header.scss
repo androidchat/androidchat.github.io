@@ -1,0 +1,43 @@
+body {
+	#header-wallpaper {
+		position: fixed;
+		z-index: -1;
+
+		height: $header-height;
+		width: 100%;
+
+		// These need to be important because there is a style tag in the #header-wallpaper
+		// This is so we have a dynamic header per post/page.
+		background-position: center !important;
+		background-size: cover !important;
+	}
+
+	& > header {
+		position: absolute;
+
+		@media #{$large-and-up} {
+			position: fixed;
+		}
+
+		padding: 16px;
+
+		#home-navigation {
+			@extend .white-text;
+
+			i {
+				@include transition(.3s);
+
+				padding: 9px;
+				border-radius: 50%;
+			}
+
+			&:hover i {
+				background-color: rgba(255, 255, 255, .1);
+			}
+
+			&:active i {
+				background-color: rgba(255, 255, 255, .2);
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.box {
+	@extend .z-depth-1;
+	@extend .white;
+
+	padding: 32px;
+	border-radius: 2px;
+	margin-bottom: 32px;
+
+	@media #{$small-and-down} {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+
+		border-radius: 0;
+	}
+}

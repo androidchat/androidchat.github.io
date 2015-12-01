@@ -1,0 +1,19 @@
+{% for pair in include.icon_list %}
+	{% assign name = pair[0] %}
+	{% assign value = pair[1] %}
+
+	{% if site.social_networks[name] %}
+		{% assign link = value | prepend: site.social_networks[name] %}
+	{% elsif value contains '://' %}
+		{% assign link = value %}
+	{% else %}
+		{% assign link = value | prepend: site.baseurl %}
+	{% endif %}
+	<a class="social-icon {{ name }}" href="{{ link }}" target="_blank">
+		{% comment %}
+		{% capture file %}icons/{{ name }}.svg{% endcapture %}
+		{% endcomment %}
+		{% assign file = name | prepend: 'icons/' | append: '.svg' %}
+		{% include {{file}} %}
+	</a>
+{% endfor %}

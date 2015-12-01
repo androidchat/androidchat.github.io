@@ -1,0 +1,10 @@
+{% assign fromColor = 'rgba(0, 0, 0, 0)' %}
+{% assign toColor = 'rgba(0, 0, 0, 0.5)' %}
+
+background: url('{{ header_url }}') no-repeat;
+background: -webkit-gradient(linear, left top, left bottom, from({{ fromColor }}), to({{ toColor }})), url('{{ header_url }}') no-repeat;
+background: -webkit-linear-gradient(top, {{ fromColor }}, {{ toColor }}), url('{{ header_url }}') no-repeat;
+background:    -moz-linear-gradient(top, {{ fromColor }}, {{ toColor }}), url('{{ header_url }}') no-repeat;
+background:     -ms-linear-gradient(top, {{ fromColor }}, {{ toColor }}), url('{{ header_url }}') no-repeat;
+background:      -o-linear-gradient(top, {{ fromColor }}, {{ toColor }}), url('{{ header_url }}') no-repeat;
+background:         linear-gradient(top, {{ fromColor }}, {{ toColor }}), url('{{ header_url }}') no-repeat;

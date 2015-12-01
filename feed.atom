@@ -1,0 +1,25 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title type="text" xml:lang="en">{{ site.title | xml_escape }}</title>
+    <link type="application/atom+xml" href="{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self"/>
+    <link type="text/html" href="home_url_canonical" rel="alternate"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ "/atom.xml" | prepend: site.baseurl | prepend: site.url }}</id>
+    <author>
+        <name>AndroidChat</name>
+    </author>
+    <rights>{{ site.copyright }}</rights>
+
+    {% for post in site.posts limit:20 %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>{{ post.url | prepend: site.baseurl | prepend: site.url }}</id>
+        <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endfor %}
+</feed>

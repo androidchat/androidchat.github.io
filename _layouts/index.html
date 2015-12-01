@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="box container home row">
+	<div class="col s12 l10 offset-l1">
+		{% for post in site.posts %}
+			<article class="post">
+				<h4 class="post-title">
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				</h4>
+				<div class="post-meta">
+					<span class="author-name">{{ site.data.authors[post.author].name }}</span>,
+					<time class="post-time" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+						{{ post.date | date: '%b %-d, %Y' }}
+					</time>
+				</div>
+				<div class="post-content">
+					{{ post.excerpt | strip_html | strip_newlines | truncatewords: 600 }}
+				</div>
+			</article>
+		{% endfor %}
+	</div>
+</div>
+
+<div class="box container info row">
+	<div class="col s12 l10 offset-l1">
+		{{ site.description | markdownify }}
+
+		<form id="signup" method="post" action="https://androidchat.stamplayapp.com/api/codeblock/v1/run/signupredirect">
+			<div class="row">
+				{% assign invalid = page.url == '/invalid/' %}
+				{% if content == '' or invalid == true %}
+					<div class="input-field col s12 m8 l7 offset-l1">
+						<input type="email" name="email" id="email" class="validate {% if invalid == true %}invalid{% endif %}" placeholder="john@gmail.com">
+		          		<label for="email" id="signup-email" {% if invalid == true %}data-error="{{ content }}"{% endif %}>Email</label>
+					</div>
+					<div class="input-field col s12 m4 l3">
+						<input type="submit" value="Join" class="btn waves-effect waves-ripple"/>
+		          		<input type="text" name="name" id="signup-name"/>
+					</div>
+				{% else %}
+					{{ content }}
+				{% endif %}
+			</div>
+		</form>
+	</div>
+</div>

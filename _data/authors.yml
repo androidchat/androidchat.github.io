@@ -1,0 +1,31 @@
+# Author example, please keep these alphabetical.
+# authors:
+#   github_username:
+#     name: firstname lastname
+#     slack: slack_username
+#     social:
+#       twitter: twitter_username
+#       googleplus: googleplus_username
+#       github: github_username
+#       website: https://example.com
+#       rss: https://example.com/rss.xml
+#
+# author.social.github is currently still required if you want your Github
+# profile to be shown in a blog post. This will hopefully no longer be
+# required in the future.
+#
+# Please use 2 spaces for indentation.
+
+andreasbackx:
+  name: Andreas Backx
+  slack: andreasbackx
+  social:
+    twitter: AndreasBackx
+    googleplus: AndreasBackx
+    github: andreasbackx
+nicholeous:
+  name: Nicole Demers
+  slack: nicholeous
+smayzes:
+  name: Shawn Mayzes
+  slack: smayzes

@@ -1,0 +1,10 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+*.sublime-project
+*.sublime-workspace
+*.sketch
+Gemfile
+
+img/headers/*-original.*

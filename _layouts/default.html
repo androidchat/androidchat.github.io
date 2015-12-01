@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% assign header_url = 'default.jpg' | prepend: site.headers %}
+	{% if page.header %}
+		{% assign header_url = page.header | prepend: site.headers %}
+	{% else %}
+		{% unless page.id %}
+			{% if site.posts.first.header %}
+				{% assign header_url = site.posts.first.header | prepend: site.headers %}
+			{% endif %}
+		{% endunless %}
+	{% endif %}
+
+	{% include head.html %}
+	<body class="grey lighten-5">
+		{% include header.html %}
+		<div id="content">
+			<div class="container">
+				<a href="{{ page.url }}">
+					<h2 id="site-title" itemprop="name headline">{{ title }}</h2>
+				</a>
+			</div>
+
+			{{ content }}
+		</div>
+		{% include footer.html %}
+	</body>
+</html>

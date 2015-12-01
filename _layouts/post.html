@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{% assign author = site.data.authors[page.author] %}
+{% if author.social.github_id %}
+	{% capture avatar_link %}https://avatars.githubusercontent.com/u/{{ author.social.github_id }}?v=3&s=128{% endcapture %}
+{% elsif author.social.twitter %}
+	{% capture avatar_link %}{{ site.social_networks.twitter }}{{ author.social.twitter }}/profile_image?size=original{% endcapture %}
+{% endif %}
+
+{% assign github-page = page.author | prepend: site.social_networks[github] %}
+
+<div class="box container">
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="row">
+			<div id="post-author" class="col s12 m3">
+				<div class="row">
+					<div class="center-vertical">
+						{% if avatar_link %}
+							<div class="col m12 l4">
+								<div id="avatar-wrapper">
+									<a href="{{ github-page }}" target="_blank">
+										<img id="avatar" src="{{ avatar_link }}" alt="{{ author.name }}"/>
+									</a>
+								</div>
+							</div>
+							<div class="col m12 l8">
+						{% else %}
+							<div class="col s12 no-avatar">
+						{% endif %}
+								<div class="post-meta">
+									{% if author %}
+									<a href="{{ github-page }}" target="_blank" class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">
+										<span itemprop="name">
+											{{ author.name }}
+										</span>
+									</a>
+									<time class="post-time" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+										{{ page.date | date: '%b %-d, %Y' }}
+									</time>
+									{% endif %}
+								</div>
+							</div>
+					</div>
+				</div>
+				{% assign author.social.github = page.author %}
+				{% if author.social %}
+					<div id="author-social">
+						{% include icons.html icon_list=author.social %}
+					</div>
+				{% endif %}
+			</div>
+			<div class="col s12 m9 post-content" itemprop="articleBody">
+				{{ content }}
+			</div>
+	    </div>
+	</article>
+</div>

@@ -1,0 +1,17 @@
+{% capture title %}
+	{% if page.title %}
+		{{ page.title }}
+	{% else %}
+		{{ site.title }}
+	{% endif %}
+{% endcapture %}
+
+<div id="header-wallpaper" style="{% include header-wallpaper.css page=page %}">
+</div>
+<header>
+	{% if page.title %}
+		<a id="home-navigation" href="{{ site.baseurl }}/">
+			<i class="material-icons small">arrow_back</i>
+		</a>
+	{% endif %}
+</header>

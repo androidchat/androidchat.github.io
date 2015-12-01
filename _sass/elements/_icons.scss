@@ -1,0 +1,109 @@
+.social-icon {
+	padding: 0 4px;
+
+	&:hover, &:active {
+		svg, svg path {
+			@include transition(.1s);
+			fill: color('grey', 'darken-4');
+		}
+	}
+
+	svg, svg path {
+		height: 24px;
+		width: 24px;
+
+		fill: color('grey', 'base');
+	}
+
+	&.github {
+		&:hover, &:active {
+			svg, svg path {
+				fill: black;
+			}
+		}
+	}
+
+	&.twitter {
+		&:hover, &:active {
+			svg, svg path {
+				fill: #55ACEE;
+			}
+		}
+	}
+
+	&.googleplus {
+		&:hover, &:active {
+			svg, svg path {
+				fill: #DC4E41;
+			}
+		}
+	}
+
+	&.rss {
+		svg, svg path {
+			height: 18px;
+			width: 18px;
+			margin: 3px;
+		}
+
+		&:hover, &:active {
+			svg, svg path {
+				fill: #FF6600;
+			}
+		}
+	}
+
+	&.slack {
+		svg, svg path {
+			#slack-bottom-right,
+			#slack-bottom-left,
+			#slack-top-right,
+			#slack-top-left {
+				fill: color('grey', 'darken-1');
+			}
+		}
+		&:hover, &:active {
+			svg, svg path {
+				#slack-top {
+					fill: #70CADB;
+				}
+
+				#slack-bottom {
+					fill: #E01765;
+				}
+
+				#slack-right {
+					fill: #E8A723;
+				}
+
+				#slack-left {
+					fill: #3EB890;
+				}
+
+				#slack-bottom-right {
+					fill: #CC2027;
+				}
+
+				#slack-bottom-left {
+					fill: #361238;
+				}
+
+				#slack-top-right {
+					fill: #65863A;
+				}
+
+				#slack-top-left {
+					fill: #1A937D;
+				}
+			}
+		}
+	}
+
+	&.website {
+		&:hover, &:active {
+			svg, svg path {
+				fill: $secondary-color;
+			}
+		}
+	}
+}

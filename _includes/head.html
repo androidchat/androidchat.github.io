@@ -1,0 +1,39 @@
+<head>
+	{% if page.title %}
+		{% assign title = page.title %}
+	{% else %}
+		{% assign title = site.title %}
+	{% endif %}
+
+	{% if page.excerpt %}
+		{% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+	{% else %}
+		{% assign description = site.short_description %}
+	{% endif %}
+
+	<title>{{ title }}</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="{{ description }}">
+
+	<meta name="author" content="{{ site.name }}">
+	<meta name="copyright" content="{{ site.copyright }}">
+
+	<meta property="og:image" content="{{ header_url }}">
+	<meta property="og:title" content="{{ title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="{{ description }}">
+
+	<meta name="twitter:card" content="app">
+	<meta name="twitter:site" content="@{{ site.social.twitter }}">
+	<meta name="twitter:creator" content="@{{ site.social.twitter }}">
+
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link type="application/atom+xml" rel="alternate" href="{{ site.feed.path | prepend: '/' | prepend: site.baseurl }}" title="{{ site.title }}">
+</head>
