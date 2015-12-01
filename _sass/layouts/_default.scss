@@ -4,8 +4,12 @@
 	padding-top: $header-overflow;
 
 	#site-title {
+		background-image: url('/img/androidchat-logo.png');
+		background-repeat: no-repeat;
+		background-size: 70px;
 		color: white;
-
-		padding-bottom: 16px;
+		padding-bottom: 10px;
+		text-indent: 70px;
+		line-height: 100px;
 	}
 }
