@@ -40,7 +40,7 @@ Everyone active in the Slack channel can submit a blog post. You don't need to a
 	$ git clone git@github.com:your_name_here/androidchat.github.io.git
 	```
 
-3. Create a new `.md` file in _posts in the format `YYYY-MM-DD-Title-of-the-post`. [Grammar](#grammar) applies for the title in the file name too.
+3. Create a new `.md` file in _drafts in the format `Title-of-the-post` or in _posts in the format `YYYY-MM-DD-Title-of-the-post`. The date of publication needs to be of the current day or one in the future. [Grammar](#grammar) applies for the title in the file name too.
 4. The front matter in your Markdown file needs to follow the following guidelines:
 	* Layout always needs to be post.
 		```yaml
@@ -106,7 +106,7 @@ Everyone active in the Slack channel can submit a blog post. You don't need to a
 
 ## Coding style guidelines
 
-Please use 2 space indentation for YAML files and 4 tab indentation for other files. When in doubt, look at the existing code. [Create an issue](#reporting-issues) if you have any questions.
+Please use 2 space indentation for YAML files and tab indentation for other files. When in doubt, look at the existing code. [Create an issue](#reporting-issues) if you have any questions.
 
 ## Commits
 
@@ -142,4 +142,4 @@ Also see [Grammar](#grammar).
 
 ## Grammar
 
-Please use standard English grammar. This Does Not Mean A Capital For Every Word You Type.
+Please use standard English grammar. This Does Not Mean A Capital For Every Word You Type. There are exclusions to this rule. Some tiles might have some branding in them or a parody of a branding, in any case just try to keep it to a minimum.
