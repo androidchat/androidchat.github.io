@@ -21,7 +21,7 @@
 
 						text-align: center;
 
-						#avatar-wrapper {
+						.avatar-wrapper {
 							display: inline-block;
 							margin-bottom: 16px;
 						}
@@ -46,19 +46,21 @@
 		    		}
 		    	}
 
-				#avatar-wrapper {
+				.avatar-wrapper {
 					display: inline-block;
 
-					max-width: 64px;
+					width: 64px;
+					height: 64px;
 
 					@media #{$large-and-up} {
 						float: right;
 					}
 
-					#avatar {
+					.avatar {
 						vertical-align: bottom;
 
 						width: 100%;
+						height: 100%;
 						border-radius: 50%;
 					}
 				}
@@ -80,8 +82,8 @@
 			}
 		}
 
-		#author-social {
-			margin-top: 16px;
+		.author-social {
+			margin: 16px 0;
 			text-align: center;
 		}
 	}

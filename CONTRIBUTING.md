@@ -77,10 +77,18 @@ Everyone active in the Slack channel can submit a blog post. You don't need to a
 		  - money
 		```
 
-	* Add yourself to `_data/authors.yml` and add use your Github username as the value of the author variable.
+	* Add yourself to `_data/authors.yml` and add use your Github username as the value of the author variable. Use a list if there were multiple authors that worked on the article.
 
 		```yaml
-		author: github_username
+		authors: github_username
+		```
+
+
+		```yaml
+		authors:
+		  - github_author1
+		  - github_author2
+		  - github_author3
 		```
 
 	* A custom header is optional, but it is required to either own the copyright of the original image or for the original image to be royalty free and allowed to be used without attribution (e.g: [CC Zero](https://creativecommons.org/publicdomain/zero/1.0/)).

@@ -2,7 +2,7 @@
 layout: post
 title: Welcome to AndroidChat!
 categories: blog
-author: andreasbackx
+authors: andreasbackx
 header: yosemite.jpg
 ---
 
