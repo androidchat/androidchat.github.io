@@ -10,7 +10,13 @@ layout: default
 					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 				</h4>
 				<div class="post-meta">
-					<span class="author-name">{{ site.data.authors[post.author].name }}</span>,
+					{% for author in post.authors %}
+						{% if forloop.first %}
+							<span class="author-name">{{ site.data.authors[author].name }}</span>,
+							{% break %}
+						{% endif %}
+					{% endfor %}
+					{{ author }}
 					<time class="post-time" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
 						{{ post.date | date: '%b %-d, %Y' }}
 					</time>
