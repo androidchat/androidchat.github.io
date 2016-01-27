@@ -10,6 +10,7 @@ tags:
   - policy
   - europe
 authors: ianrumac
+header: eu_flag.png
 ---
 Dear European Commision,
 
