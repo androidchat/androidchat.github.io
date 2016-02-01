@@ -11,7 +11,7 @@ layout: default
 					{% if author.social.github_id %}
 						{% assign avatar_link = author.social.github_id | prepend: 'https://avatars.githubusercontent.com/u/' | append: '?v=3&s=128' %}
 					{% elsif author.social.twitter %}
-						{% assign avatar_link = author.social.twitter | prepend: site.social_networks.twitter | append: '/profile_image?size=original' %}
+						{% assign avatar_link = author.social.twitter | prepend: site.social_networks.twitter | append: '/profile_image?size=bigger' %}
 					{% else %}
 						{% assign avatar_link = false %}
 					{% endif %}
