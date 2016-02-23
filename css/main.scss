@@ -14,7 +14,12 @@ $header-overflow: ($header-height / 4) * 1.5;
 @import 'elements/icons';
 @import 'elements/header';
 @import 'elements/footer';
+@import 'elements/share';
 
 @import 'layouts/default';
 @import 'layouts/index';
 @import 'layouts/post';
+
+.post-social {
+    margin-top: $spacing-unit;
+}
