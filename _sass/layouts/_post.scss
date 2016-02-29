@@ -108,16 +108,17 @@
 			word-wrap: break-word;
 		}
 
-		h1 {
-			@extend h4;
-		}
+		$h1-post-fontsize: $h4-fontsize;
+		$h2-post-fontsize: (($h4-fontsize - $h5-fontsize) / 2) + $h5-fontsize;
+		$h3-post-fontsize: $h5-fontsize;
+		$h4-post-fontsize: (($h5-fontsize - $h6-fontsize) / 2) + $h6-fontsize;
+		$h5-post-fontsize: $h6-fontsize;
 
-		h2 {
-			@extend h5;
-		}
-
-		h3 {
-			@extend h6;
-		}
+		// Straight from Materialize.scss
+		h1 { font-size: $h1-post-fontsize; line-height: 110%; margin: ($h1-post-fontsize / 2) 0 ($h1-post-fontsize / 2.5) 0;}
+		h2 { font-size: $h2-post-fontsize; line-height: 110%; margin: ($h2-post-fontsize / 2) 0 ($h2-post-fontsize / 2.5) 0;}
+		h3 { font-size: $h3-post-fontsize; line-height: 110%; margin: ($h3-post-fontsize / 2) 0 ($h3-post-fontsize / 2.5) 0;}
+		h4 { font-size: $h4-post-fontsize; line-height: 110%; margin: ($h4-post-fontsize / 2) 0 ($h4-post-fontsize / 2.5) 0;}
+		h5, h6 { font-size: $h5-post-fontsize; line-height: 110%; margin: ($h5-post-fontsize / 2) 0 ($h5-post-fontsize / 2.5) 0;}
 	}
 }
