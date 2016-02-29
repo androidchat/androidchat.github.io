@@ -7,12 +7,18 @@
 #       twitter: twitter_username
 #       googleplus: googleplus_username
 #       github: github_username
+#       github_id: 'github_id'
 #       website: https://example.com
 #       rss: https://example.com/rss.xml
 #
 # author.social.github is currently still required if you want your Github
 # profile to be shown in a blog post. This will hopefully no longer be
 # required in the future.
+#
+# author.social.github_id is required if you want to use your Github avatar
+# next to your blog posts. You can find out yout github_id using the following
+# link: https://api.github.com/users/{ github_username }
+# Use single quotes around the github_id so it is detected as a string.
 #
 # Please use 2 spaces for indentation.
 
@@ -44,4 +50,3 @@ ianrumac:
   social:
     twitter: ianissoawesome
     github: ianrumac
-

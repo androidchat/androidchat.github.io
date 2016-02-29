@@ -2,6 +2,10 @@
 	{% assign name = pair[0] %}
 	{% assign value = pair[1] %}
 
+	{% if name == 'github_id' %}
+		{% continue %}
+	{% endif %}
+
 	{% if site.social_networks[name] %}
 		{% assign link = value | prepend: site.social_networks[name] %}
 	{% elsif value contains '://' %}
