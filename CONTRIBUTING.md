@@ -40,8 +40,9 @@ Everyone active in the Slack channel can submit a blog post. You don't need to a
 	$ git clone git@github.com:your_name_here/androidchat.github.io.git
 	```
 
-3. Create a new `.md` file in _drafts in the format `Title-of-the-post` or in _posts in the format `YYYY-MM-DD-Title-of-the-post`. The date of publication needs to be of the current day or one in the future. [Grammar](#grammar) applies for the title in the file name too.
-4. The front matter in your Markdown file needs to follow the following guidelines:
+3. Checkout to a new branch which you'll be using for the rest of the process.
+4. Create a new `.md` file in the `_posts` directory in the format `YYYY-MM-DD-Title-of-the-post`. The date of publication needs to be in the future and will be the date your post is published, this can always be changed in the pull request. [Grammar](#grammar) applies for the title in the file name too.
+5. The front matter in your Markdown file needs to follow the following guidelines:
 	* Layout always needs to be post.
 		```yaml
 		layout: post
@@ -103,14 +104,14 @@ Everyone active in the Slack channel can submit a blog post. You don't need to a
 
 		_Please do not add any kind of gradient to the image as that will be added via CSS._
 
-5. The content of the post is up to you. It is however possible to have a foreword if you so desire. Make sure the first paragraph is _italic_ and a bottom margin will be added.
+6. The content of the post is up to you. It is however possible to have a foreword if you so desire. Make sure the first paragraph is _italic_ and a bottom margin will be added.
 
 	**Foreword example:**
 	```markdown
 	_Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem tempore similique esse dolorem aliquam, commodi id nam, maiores qui eveniet minima a accusamus consequatur quam. Eius ducimus, quo corporis illo._
 	```
 
-6. Push the changes to the fork and make a pull request.
+7. Push the changes to the fork and make a pull request with the newly made branch.
 
 ## Coding style guidelines
 
