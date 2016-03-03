@@ -1,0 +1,37 @@
+.post-share {
+    text-align: center;
+}
+
+.share {
+    &.facebook {
+        color: #3B5998;
+    }
+
+    &.googleplus {
+        color: #DC4E41;
+    }
+
+    &.reddit {
+        color: #336699;
+    }
+
+    &.twitter {
+        color: #55ACEE;
+    }
+}
+
+.waves-effect.waves-facebook .waves-ripple {
+    background-color: rgba(59, 89, 152, 0.7);
+}
+
+.waves-effect.waves-googleplus .waves-ripple {
+    background-color: rgba(220, 78, 65, 0.7);
+}
+
+.waves-effect.waves-reddit .waves-ripple {
+    background-color: rgba(51, 102, 153, 0.7);
+}
+
+.waves-effect.waves-twitter .waves-ripple {
+    background-color: rgba(85, 172, 238, 0.7);
+}
