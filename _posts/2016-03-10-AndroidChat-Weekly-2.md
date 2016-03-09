@@ -11,6 +11,7 @@ tags:
 authors: nishtahir
 ---
 
+  AndroidChat celebrates its 2000th member, a few great tips to help you with your layouts and is Apple likely to be fined for protecting user data?
 
 # Top content in \#development
 
@@ -34,7 +35,7 @@ authors: nishtahir
 
   - [Hack Brief: Last Year’s IRS Hack Was Way Worse Than We Realized](http://www.wired.com/2016/02/irs-hack-700000-accounts/all/1) - shared by *kv87*
 
-  WHEN THE IRS first reported a hack that exposed taxpayer accounts’ vulnerable information, it pegged the number of affected people at a little over 100,000. Today, in its second upward revision, the number of affected people now stands at over 700,000.
+  When the IRS first reported a hack that exposed taxpayer accounts’ vulnerable information, it pegged the number of affected people at a little over 100,000. Today, in its second upward revision, the number of affected people now stands at over 700,000.
 
   - [Federal judge: Apple doesn't have to unlock iPhone in N.Y. case](http://www.politico.com/story/2016/02/federal-judge-apple-doesnt-have-to-unlock-iphone-in-ny-case-219999) - shared by *we-build-peter*
 
@@ -44,7 +45,7 @@ authors: nishtahir
 
  - [SDP - a scalable size unit](https://github.com/intuit/sdp) - shared by *damien5314*
 
- An android SDK that provides a new size unit - sdp (scalable dp). This size unit scales with the screen size. It can help Android developers with supporting multiple screens.
+ An Android SDK that provides a new size unit - sdp (scalable dp). This size unit scales with the screen size. It can help Android developers with supporting multiple screens.
 
  - [ScalableLayout for Android](https://github.com/ssomai/ScalableLayout) - shared by *newguyingeneral*
 
@@ -54,7 +55,7 @@ authors: nishtahir
 
  - [Twitter: Google developers](https://twitter.com/googledevs/status/704728775469174785) - shared by *zmarkan*
 
- Google developers twitter counts down the days to google io 2016.
+ Google Developers Twitter counts down the days to Google I/O 2016.
 
  - [Youtube: Announcing the Raspberry Pi 3](https://youtu.be/-Q_3pqoJWos) - shared by *andreasbackx*
 
