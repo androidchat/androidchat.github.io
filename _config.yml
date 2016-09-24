@@ -31,7 +31,7 @@ headers: /img/headers/compressed/
 markdown: kramdown
 sass:
   style: compressed
-highlighter: pygments
+highlighter: rouge
 gems:
   - jekyll-sitemap
 permalink: pretty
