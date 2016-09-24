@@ -11,7 +11,7 @@ tags:
 authors: nishtahir
 ---
 
-AndroidChat is a fantastic community of almost 2000 developers with a love of all things code. It's a fantastic place to go to for help, advice or just ~~to slack off~~ a casual conversation during the work day. A lot of content gets shared; sometimes related to trending topics such as code and policy, and other times just helpful tips, tricks and resource.
+AndroidChat is a fantastic community of almost 2000 developers with a love of all things code. It's a fantastic place to go to for help, advice or just <del>to slack off</del> a casual conversation during the work day. A lot of content gets shared; sometimes related to trending topics such as code and policy, and other times just helpful tips, tricks and resource.
 
 This newsletter hopes to bring you some of the best content each week.
 

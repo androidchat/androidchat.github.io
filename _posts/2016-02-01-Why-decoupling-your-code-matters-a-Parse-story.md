@@ -8,7 +8,7 @@ categories:
 authors: zmarkan
 ---
 
-_A ~~told you so moment~~ cautionary tale for a time of a ~~great galactic turmoil~~ beloved service shutting down_
+_A <del>told you so moment</del> cautionary tale for a time of a <del>great galactic turmoil</del> beloved service shutting down_
 
 You may have heard it on the internets, Parse and Facebook recently [announced that Parse will be shutting down in 2017](http://blog.parse.com/announcements/moving-on/). I know a bunch of mobile developers who will now have to rewrite their apps to use a different backend, migrate their databases and generally have lots of work to do. But this work, although it can't be avoided completely, can at least be reduced to a minimum. May this post help you with that.
 
@@ -24,7 +24,7 @@ Parse docs are littered with simple to write, quick to run examples that let you
 
 In Android, that starts when you initialise it in you Application class, or in iOS that would be in your AppDelegate. Also, whenever you're persisting or looking up some data, there is a static method you can call to get a bunch of ParseObjects your views can easily consume. Directly, obvs.
 
-Now suppose you've decided to switch to Firebase to replace Parse. In addition to migrating your data, you will need to ~~refactor~~ rewrite your Application class and a truckload of view logic - all of that just to release an update to your app to keep the wheels rolling.
+Now suppose you've decided to switch to Firebase to replace Parse. In addition to migrating your data, you will need to <del>refactor</del> rewrite your Application class and a truckload of view logic - all of that just to release an update to your app to keep the wheels rolling.
 This can easily take a few days, maybe weeks, precious time when you could be releasing features, drinking, or providing actual value in some other way.
 
 # Decoupling for the win

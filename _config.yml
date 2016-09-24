@@ -28,10 +28,7 @@ social_networks:
 
 # Build settings
 headers: /img/headers/compressed/
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - strikethrough
+markdown: kramdown
 sass:
   style: compressed
 highlighter: pygments
